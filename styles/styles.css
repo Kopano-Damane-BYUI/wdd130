@@ -21,6 +21,7 @@ p {
     padding: 0;   
 }
 main {
+    max-width: 70%;
     width: 840px;
 }
 aside {
