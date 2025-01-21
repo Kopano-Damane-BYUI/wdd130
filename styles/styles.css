@@ -8,6 +8,7 @@ nav {
     background-color: darkblue;
     padding: 10px;
 }
+
 nav a {
     color: white;
     display: block;
@@ -43,6 +44,7 @@ aside {
     text-align: center;
     position: relative;
 }
+
 aside img {
     width: 200px;
     height: auto;
@@ -60,7 +62,7 @@ footer {
     text-align: center;
 }
 
-/* Class selector */
+/*Class selector*/
 
 .box {
     margin: 1rem;
