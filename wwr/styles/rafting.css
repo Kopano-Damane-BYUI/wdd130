@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #03120e;
+    --secondary-color: #3e2f5b;
+    --accent1-color: #c5d86d;
+    --accent2-color: #10ffcb;
+} 
+
+body {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+h1, h2 { 
+    font-family: 'Roboto', serif;
+    text-transform: uppercase;
+    color: var(--accent2-color);
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+.sociallinks a {
+    text-decoration: none;
+} 
+
+/* Container that holds everything, makes it relative so the children can be absolutely positioned */
+.hero {
+    position: relative;
+    width: 100%; /* Ensures the hero div takes up full container width */
+}
+
+/* Hero image should take full width and maintain aspect ratio */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    width: 100%;
+    top: 30%; /* Adjust this to position the heading vertically where you like */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; /* Change text color to make it visible on the image */
+    font-size: 3rem; /* Adjust as needed */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: add shadow for better visibility */
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%; /* Adjust to control the space from the bottom of the hero image */
+    left: 5%;
+    right: 5%;
+    background-color: rgba(31, 125, 159, 0.5); /* Semi-transparent black background for readability */
+    padding: 20px;
+    color: white;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 20px; /* Adds spacing between the image and the text */
+    width: 200px; /* Adjust as needed */
+    height: auto;
+}
+
+.sociallinks img {
+    width: 30px;
+}
