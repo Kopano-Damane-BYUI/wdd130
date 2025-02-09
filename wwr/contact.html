@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | WDD 130 | White Water Rafting</title>
+    <meta name="description" content="Get in touch with us! Have questions or need assistance? Contact our team via phone, email, or our online form. We're here to help!">
+    <meta name="author" content="Kopano Damane">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/z-splash.png" alt="This is the logo">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Tips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+      <section>
+        <h1>employees</h1>
+        <div class="employees">
+            <figure>
+                <img src="images/anna.jpg" alt="Image of our happy employee named Anna">
+                <figcaption>Anna</figcaption>
+                <span class="job_title">Health and safety</span>
+            </figure>
+            <figure>
+                <img src="images/harris.jpg" alt="Image of our happy employee named Harris">
+                <figcaption>Harris</figcaption>
+                <span class="job_title">Rafting site coordinator </span>
+            </figure>
+            <figure>
+                <img src="images/kate.jpg" alt="Image of our happy employee named Kate">
+                <figcaption>Kate</figcaption>
+                <span class="job_title">Activities Manager</span>
+            </figure>
+            <figure>
+                <img src="images/steve.jpg" alt="Image of our happy employee named Steve">
+                <figcaption>Steve</figcaption>
+                <span class="job_title">General assistant </span>
+            </figure>
+        </div>
+      </section>
+      <section>
+        <h2>Form</h2>
+          <form>
+              <fieldset>
+                  <legend>User info</legend>
+                  <label for="fullname">Full Name: *</label>
+                  <input type="text" id="fullname" name="fullname">
+                  <label for="useremail">Email: *</label>
+                  <input type="email" id="useremail" name="useremail">
+                  <div>Required fields are represented by *</div>
+              </fieldset>
+              <fieldset>
+                  <legend>Questions</legend>
+                  <p>What kind of a message will you send?</p>
+                  <div class="radio_btn">
+                    <input type="radio" id="general_q" name="messagePurpose" value="General Inquiry">
+                    <label for="general_q">General Inquiry</label><br>
+    
+                    <input type="radio" id="reservation_q" name="messagePurpose" value="Reservation Question">
+                    <label for="reservation_q">Reservation Question</label><br>
+    
+                    <input type="radio" id="websiteSuggestion" name="messagePurpose" value="Website Suggestion">
+                    <label for="websiteSuggestion">Website Suggestion</label><br>
+                  </div>
+  
+                  <label for="message">Message</label><br>
+                  <textarea id="message" name="message" rows="4" placeholder="Please write your message here.."></textarea>
+              </fieldset>
+              <button type="submit">Submit</button>
+          </form>
+      </section>
+      <section class="contact-info">
+          <div class="contact-left">
+              <h2>Contact Information</h2>
+              <h3>Address</h3>
+              <address>
+                  75 Harrington St, District Six, Cape Town, 7925
+              </address>
+              <h3>Contact Numbers</h3>
+              <span>+27 21 051 4433</span><br>
+              <span>+27 82 954 3344</span>
+              <h3>Email</h3>
+              <span>info@waterrafting.com</span>
+          </div>
+          <div class="contact-right">
+              <h3>Location Map</h3>
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.453288537331!2d18.42118867456968!3d-33.92865037320372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc677c0a0d0a55%3A0xd0a9be672b772ea7!2s75%20Harrington%20St%2C%20District%20Six%2C%20Cape%20Town%2C%207925!5e1!3m2!1sen!2sza!4v1739099343397!5m2!1sen!2sza" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+      </section>
+  </main>
+  <footer>
+    <p>&copy; 2025, The Rafting Company, Kopano Damane</p>
+    <nav class="sociallinks">
+        <a href="https://facebook.com">
+          <img src="images/facebook_logo_icon.png" alt="Facebook">
+        </a>
+        <a href="https://twitter.com">
+          <img src="images/twitter_logo_icon.png" alt="Twitter">
+        </a>
+        <a href="https://instagram.com">
+          <img src="images/instagram_logo_icon.png" alt="Instagram">
+        </a>
+      </nav>          
+  </footer>
+</body>
+</html>
