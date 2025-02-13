@@ -1,3 +1,4 @@
+/*general*/
 :root {
     --primary-color: #03120e;
     --secondary-color: #3e2f5b;
@@ -46,15 +47,217 @@ header img {
     height: 6rem;
     padding: 3px 4rem;
 }
+/*Close general*/
+
+/*Home*/
+
+.home-hero h1 {
+    position: absolute;
+    width: 80%;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(27, 10, 216, 0.445);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+    border: solid 1px;
+}
+
+.cta-container {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+.cta-button {
+    background-color: rgba(27, 10, 216, 0.8);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: rgb(17, 6, 146);
+    transform: scale(1.05);
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #283593;
+    text-align: center;
+    padding: 40px;
+    color: white;
+  }
+  
+  .cta p {
+    font-size: 20px;
+  }
+  
+  .cta-button {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #e64a19;
+  }
+
+.signup-section {
+    background: linear-gradient(135deg, #0077b6, #48cae4);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: whitesmoke;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.signup-form fieldset {
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.signup-form legend {
+    font-weight: bold;
+}
+
+.signup-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signup-form input:focus {
+    border-color: #ffdd57;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.required-fields {
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.signup-btn {
+    background-color: #0077cc;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #005fa3;
+}
+/*close home*/
+
+/*Open about*/
+
+/* Hero image section */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 32rem;
+}
+
+.hero .trans-p {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero article img {
+    float: right;
+    margin-left: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    right: 5%;
+    background-color: rgba(82, 82, 82, 0.8); /* Increased opacity for better contrast */
+    padding: 20px;
+    color: white;
+}
+
+article p {
+    color: #FFFFFF;
+}
+
+article h2 {
+    display: none;
+}
 
 .history img {
-    width: 250px;
+    width: 100%;
+    height: 180px;
     grid-column: 2;
+    object-fit: cover;
 }
 
 .history {
     display: grid;
-    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cols-3 {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 0.6fr;
 }
 
 .history h2 {
@@ -63,6 +266,40 @@ header img {
     text-align: center;
 }
 
+.cols-3 {
+    display: grid;
+    grid-template-rows: auto 1fr; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    text-align: center; 
+}
+  
+.cols-3 h2 {
+    grid-column: 1 / -1; 
+    text-align: center;
+}
+  
+.cols-3 p {
+    grid-column: 2 / 3; 
+    text-align: justify;
+    margin-top: 0;
+}
+  
+.cols-3 img {
+    width: 100%; 
+    height: 220px;
+    object-fit:cover;
+    border: solid 3px var(--secondary-color);
+}
+  
+.cols-3 img:first-of-type {
+    grid-column: 1 / 2; /* First image in the first column */
+}
+  
+.cols-3 img:last-of-type {
+    grid-column: 3 / 4; /* Second image in the third column */
+}
+  
 #p-1 {
     grid-column: 1;
     grid-row: 2;
@@ -143,82 +380,142 @@ h1, h2 {
     color: #003366;
 }
 
-.sociallinks a {
-    text-decoration: none;
-}
+/*Close about*/
 
-/* Hero image section */
-.hero {
-    position: relative;
-    width: 100%;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    width: 100%;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.hero article {
-    position: absolute;
-    bottom: 10%;
-    left: 5%;
-    right: 5%;
-    background-color: rgba(82, 82, 82, 0.8); /* Increased opacity for better contrast */
-    padding: 20px;
-    color: white;
-}
-
-article p {
-    color: #FFFFFF;
-}
-
-.hero article img {
-    float: right;
-    margin-left: 20px;
-    width: 200px;
-    height: auto;
-}
-
-.sociallinks img {
-    width: 30px;
-}
-
-article h2 {
-    display: none;
-}
-
-footer {
+/* Trips */
+.trips {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin-top: 10px;
-    background-color: #333333;
-    padding: 5px;
-}
-
-.sociallinks {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 20px;
+   
+  }
+  
+  /* Make the heading span all columns */
+  .trip-header {
+    grid-column: span 3;
+    text-align: center;
+  }
+  
+  .trip {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .trip:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .trip h3 {
+    font-size: 24px;
+    color: #283593;
+    margin-bottom: 15px;
+  }
+  
+  .trip-images {
     display: flex;
-    justify-content: center;
-}
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .trip-image {
+    width: 48%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .trip p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
 
-footer p {
-    text-align: right;
-    color: #FFFFFF;
-}
+  /* trips table */
+  /* Trip Table */
+.trip-table {
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .trip-table h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #283593;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #283593;
+    color: white;
+    font-size: 18px;
+  }
+  
+  td {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }  
 
+/* Call to Action for Trips */
+.cta-trips {
+    text-align: center;
+    background-color: #465af5;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+  }
+  
+  .cta-trips h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .cta-trips p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #283593;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffd633;
+    transform: scale(1.05);
+  }
+  
+
+  /*close trips  */
+
+/* contact */
+
+/* employee */
 .employees {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -250,6 +547,7 @@ footer p {
     border-radius: 8px;
     text-align: center;
 }
+/* close employees */
 
 /* General form styling */
 form {
@@ -362,3 +660,52 @@ button:hover {
     height: 15rem;
     border: 0;
 }
+
+/* Close contact */
+
+/*footer*/
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 10px;
+    background-color: #333333;
+    padding: 5px;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    text-align: right;
+    color: #FFFFFF;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 10px;
+    background-color: #333333;
+    padding: 5px;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
+
+.sociallinks img {
+    width: 30px;
+}
+/* close footer */
