@@ -97,26 +97,26 @@ nav a:hover {
     text-align: center;
     padding: 40px;
     color: white;
-  }
+}
   
 p {
     text-align: justify;
     margin-top: 0;
 }
   
-  .cta-button {
-    background-color: #ff5722;
+.cta-button {
+    background-color: hsl(14, 100%, 57%);
     color: white;
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
-  }
+}
   
-  .cta-button:hover {
+.cta-button:hover {
     background-color: #e64a19;
-  }
+}
 
 .signup-section {
     background: linear-gradient(135deg, #0077b6, #48cae4);
@@ -132,47 +132,16 @@ p {
     color: whitesmoke;
 }
 
-.signup-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .signup-form fieldset {
     border: 2px solid white;
     padding: 15px;
     border-radius: 8px;
 }
 
-.signup-form legend {
-    font-weight: bold;
-}
-
-.signup-form label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.signup-form input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 2px solid white;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
 .signup-form input:focus {
     border-color: #ffdd57;
     outline: none;
     background: rgba(255, 255, 255, 0.2);
-}
-
-.required-fields {
-    font-size: 14px;
-    margin-top: 10px;
-    opacity: 0.8;
 }
 
 .signup-btn {
@@ -409,12 +378,6 @@ h1, h2 {
     border-radius: 5px;
     object-fit: cover;
 }
-  
-.trip p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-}
 
 /* trips table */
   
@@ -470,12 +433,11 @@ tr:nth-child(even) {
     font-size: 28px;
     margin-bottom: 15px;
 }
-  
-.cta-trips p {
-    font-size: 18px;
-    margin-bottom: 20px;
+
+.cta-trips p{
+    text-align: center;
 }
-  
+
 .cta-button {
     display: inline-block;
     background-color: #ffcc00;
@@ -492,7 +454,6 @@ tr:nth-child(even) {
     background-color: #ffd633;
     transform: scale(1.05);
 }
-  
 
 /*close trips  */
 
@@ -656,35 +617,15 @@ footer {
     padding: 5px;
 }
 
-.sociallinks {
-    display: flex;
-    justify-content: center;
-}
-
 footer p {
     text-align: right;
     color: #FFFFFF;
+    padding-top: 15px;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin-top: 10px;
-    background-color: #333333;
-    padding: 5px;
-}
-
-.sociallinks {
+.sociallinks, a {
     display: flex;
     justify-content: center;
-}
-
-footer p {
-    text-align: right;
-    color: #FFFFFF;
-}
-
-.sociallinks a {
     text-decoration: none;
 }
 
