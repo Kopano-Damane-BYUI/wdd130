@@ -10,7 +10,6 @@ body {
     margin: 0 30px;
     background-color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
-    color: #333; /* Default text color for readability */
 }
 
 header {
@@ -440,7 +439,7 @@ tr:nth-child(even) {
 
 .cta-button {
     display: inline-block;
-    background-color: #ffcc00;
+    background-color: #f7e8ad;
     color: #283593;
     padding: 12px 24px;
     font-size: 18px;
